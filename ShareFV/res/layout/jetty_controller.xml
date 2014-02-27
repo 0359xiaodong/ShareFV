@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/sharefv_bg"
+    android:gravity="center" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="0.8"
+        android:background="@drawable/group_yellow"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_start"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="startservice"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_start_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_start_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启分享服务"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_publics"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="publicshare"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/publics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_publics_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_publicshare_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享给所有人"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:layout_weight="0.8"
+        android:background="@drawable/group_green"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_play"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="player"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_play_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_play_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_explorer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/explorer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_explorer_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_explorer_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择共享视频"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:layout_weight="0.8"
+        android:background="@drawable/group_blue"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="search"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_search_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_search_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大家都在看什么"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jetty_controller_LinearLayout_share"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="share"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jetty_controller_share_btn_01"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/jetty_controller_share_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享到社交网络"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+    </TableRow>
+
+</TableLayout>
